@@ -1,0 +1,67 @@
+<DDL version="1.3">
+	<Device>
+		<Description>
+			<Name>Light Sensor</Name>
+			<Device_Type>Physical</Device_Type>
+			<Verbose_Description>Light Detection Sensor</Verbose_Description>
+			<Vendor>University of Florida</Vendor>
+			<Version>1.0</Version>
+			<Physical>
+				<Device name = "LDR_Digital">
+					<type>DIGITAL</type>
+					<leg id = "Orange">
+						<chip>1</chip>
+						<pin>28</pin>
+						<mode>in</mode>
+					</leg>
+					<leg id = "Red">
+						<chip>0</chip>
+						<pin></pin>
+						<mode>out</mode>
+					</leg>
+					<leg id = "Blue">
+						<chip>0</chip>
+						<pin></pin>
+						<mode>gnd</mode>
+					</leg>
+				</Device>
+				<Device name = "LDR_Analog">
+					<type>ANALOG</type>
+					<leg id = "Orange">
+						<chip></chip>
+						<pin>1</pin>
+						<mode>in</mode>
+					</leg>
+					<leg id = "Red">
+						<chip></chip>
+						<pin>VDD</pin>
+						<mode>out</mode>
+					</leg>
+					<leg id = "Blue">
+						<chip></chip>
+						<pin></pin>
+						<mode>gnd</mode>
+					</leg>
+					<expression>
+						<constant>500</constant>
+						<maxVA>1.8</maxVA>
+						<maxVD>4095</maxVD>
+					</expression>
+				</Device>
+				<Device name = "LED">
+					<type>DIGITAL</type>
+					<leg id = "Yellow">
+						<chip>1</chip>
+						<pin>21</pin>
+						<mode>out</mode>
+					</leg>
+					<leg id = "Green">
+						<chip></chip>
+						<pin></pin>
+						<mode>gnd</mode>
+					</leg>
+				</Device>
+			</Physical>
+		</Description>
+	</Device>
+</DDL>
